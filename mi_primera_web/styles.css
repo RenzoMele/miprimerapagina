@@ -1,0 +1,238 @@
+body {
+    margin: 0;
+    padding: 0;
+
+   font-family: "Roboto", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+
+      
+      
+}
+
+
+ol, ul {
+    list-style: none;    
+}
+a{
+    text-decoration: none;
+}
+#Encabezado {
+    display:flex;
+    background-color: rgb(230, 198, 94);
+    align-items: center;
+    justify-content: space-between;
+    height: 6em;
+    border-radius: 0 0 20px 20px;
+}
+header a i {
+    color: rgb(42, 50, 165);
+    font-size: 3em;
+    padding: 0.6em;
+}
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2.8em;
+    padding: 15px;
+}
+header nav ul a {
+    font-size: 1.8em;
+    color:black
+}
+#check {
+    display: none;
+}
+.checkbtn {
+    font-size: 40px;
+    color: rgb(221, 14, 14);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 768px) {
+    #Encabezado {
+        background-color: rgb(121, 33, 221); 
+        justify-content: space-between; 
+    }
+    header nav ul {       
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(56, 59, 243);
+        text-align: center;
+
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+    #check:checked ~ ul {
+        left: 0%;
+        display: block;
+    }
+    header nav ul a {
+        font-size: 2em;
+        line-height: 3em;
+        display: block;
+        color:black
+    }
+    .checkbtn {
+        display: block;
+    }
+    #check:checked ~ .checkbtn {
+        color: brown;
+    }
+    .fa-solid {
+        font-weight: 900;
+    }
+
+}
+
+    
+
+.seccion-1 {
+     background-color: rgb(252, 252, 252);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 5% 25% 5% 25%;
+     text-align: right;
+}
+.acerca-de {
+    padding: 3%;
+}
+.acerca-imagen img {
+    width: 500px;
+    height: 380px;
+    border-radius: 30px
+}
+.acerca-de h1 {
+    font-size: 2.8em;
+}
+.acerca-de p {
+    font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .seccion-1 {
+        background-color: rgb(176, 235, 243);       
+        padding: 2% 5% 2% 5%; 
+        flex-wrap: wrap;
+        text-align: center;
+        
+   }
+   .acerca-imagen img {
+    width: 400px;
+    height: 280px;
+    border-radius: 30px
+}
+
+}
+
+
+.seccion-2 img {
+    width: 100%;
+    height: 40em;    
+}
+main h2 {
+    padding: 2em 0 0 2.5em ;
+    font-size: 1.9em;
+    color: orangered;
+    position: relative;
+    top: 50px;
+}
+@media (max-width: 768px) {
+    .seccion-2 img {
+        width: 100%;
+        height: 20em;    
+    }
+    main h2 {
+        font-size: 1.9em;
+        color: orangered; 
+        position: relative;
+        top: 0;   
+    }
+}
+
+.seccion-3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.mascota {
+    padding: 30px;
+    margin: 80px;
+    font-size: 1.5em;
+    text-align: justify;    
+}
+
+
+.mascota img {
+      width: 350px;
+      height: 350px;
+      border-radius: 10% / 10%;
+      position: relative;
+      top: 20px;
+      left: 35px;
+}
+@media (max-width: 768px) {
+    .seccion-3 {
+        background-color: rgb(165, 240, 240);
+        
+        flex-wrap: wrap;
+    }
+    .mascota img {
+        width: 300px;
+      height: 300px;
+      position: relative;
+      top: 40px;
+      left: 125px;
+
+    }
+
+    
+}
+
+
+footer {
+    background-color: rgb(235, 247, 129);
+    border: 5px solid rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+}
+footer h3 {
+    font-size: 2.5em;
+    color: rgba(77, 133, 3, 0.877);      
+}
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+}
+footer ul li a{
+    font-size: 2em;
+    color: rgb(1, 1, 5);
+}
+footer i {
+    position: fixed;
+    bottom: 22px;
+    right: 39px;
+    font-size: 2.5em;
+    color: rebeccapurple;
+}
+@media (max-width:768px) {  
+    footer i {
+        position: fixed;
+        left: 25px;
+        font-size: 2.5em;
+        color: rebeccapurple;
+    }
+}
+
